@@ -11,9 +11,9 @@ import imageCompression from "browser-image-compression";
 const ModalBox = () => {
   const Account = useRecoilValue(metadata);
   const setModal = useSetRecoilState(NftModal);
-  const REGION = import.meta.env.VITE_APP_REGION;
-  const ACESSKEY = import.meta.env.VITE_APP_ACCESS_KEY_ID;
-  const SECRETKEY = import.meta.env.VITE_APP_SECRET_ACCESS_KEY_ID;
+  const REGION = import.meta.env?.VITE_APP_REGION;
+  const ACESSKEY = import.meta.env?.VITE_APP_ACCESS_KEY_ID;
+  const SECRETKEY = import.meta.env?.VITE_APP_SECRET_ACCESS_KEY_ID;
 
   const [ButtonData, setButtonData] = useState([
     {
